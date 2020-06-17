@@ -1,5 +1,10 @@
-// Program that practices input and output
-let rlSync = require('readline-sync');
-let firstname = rlSync.question("What's your first name?\n");
-let lastname = rlSync.question("What's your last name?\n");
-console.log(`Hello, ${firstname} ${lastname}!`);
+// Program that practices input and output and funtions
+function getName(prompt) {
+  let readlineSync = require('readline-sync');
+  let name = readlineSync.question(prompt);
+  return name;
+}
+
+let firstName = getName('What is your first name? ');
+let lastName = getName('What is your last name? ');
+console.log(`Hello, ${firstName} ${lastName}!`);
